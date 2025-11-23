@@ -2,7 +2,7 @@ return {
   "nvim-neotest/neotest",
   dependencies = {
     "nvim-neotest/neotest-python",
-    "fredrikaverpil/neotest-golang",
+    { "fredrikaverpil/neotest-golang", version = "^2.0.0" }, -- Use v2.0.0+ for treesitter compatibility
   },
   opts = function(_, opts)
     if not opts.adapters then opts.adapters = {} end
